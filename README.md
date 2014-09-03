@@ -1,8 +1,8 @@
-# Scorn's Donation System
+# HDG Auto Donation System
 ======
 
 ### Description:
-Scorn's Donation System is an innovation in Garry's Mod auto-donation systems. This system contains the following features.
+HDG Auto Donation System is an innovation in Garry's Mod auto-donation systems. This system contains the following features.
 
 * Unlimited number of servers to connect to.
 * An unlimited number of packages to choose from.
