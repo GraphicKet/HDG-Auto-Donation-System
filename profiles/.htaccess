@@ -1,0 +1,14 @@
+# This file is here to prevent external IP's from accessing cached profile information from steam.
+<Limit GET POST>
+  order deny,allow
+  deny from all
+  allow from 127.0.0.1
+  allow from localhost
+  # allow from ::0  #Experimental, should allow IPv6 to access it.
+</Limit>
+ErrorDocument 403 ../index.php #Sneaky people go back to index.
+# secure htaccess file
+<Files .htaccess>
+	order allow,deny
+	deny from all
+</Files>
