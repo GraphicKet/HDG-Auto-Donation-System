@@ -38,3 +38,4 @@ A ticked box means its fixed.
 | [HDG] Faerachnidendro | Assistance in the initial development process |
 | Micah Carrick | Authoring paypal.class.php |
 | Rob McFadzean | Authoring steamapiv2.class.php |
+| ScP | Author of the TeamSpeak 3 library |
