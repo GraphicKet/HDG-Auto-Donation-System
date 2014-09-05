@@ -36,3 +36,5 @@ A ticked box means its fixed.
 | ---------- | ---------- |
 | FIG-Scorn | Initial Creation of the system |
 | [HDG] Faerachnidendro | Assistance in the initial development process |
+| Micah Carrick | Authoring paypal.class.php |
+| Rob McFadzean | Authoring steamapiv2.class.php |
