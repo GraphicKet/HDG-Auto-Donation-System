@@ -2,7 +2,11 @@
 ======
 
 ### Description:
-HDG Auto Donation System is an innovation in Garry's Mod auto-donation systems. This system contains the following features.
+HDG Auto Donation System is an innovation in Garry's Mod auto-donation systems. Provided free, this software is designed to suit almost any GMOD community, and their individual needs for donation processing.
+
+Despite being in a very early stage of development, this system is supposed to fit all sizes. Whether you run a top ranking Garry's Mod community with 50 odd servers with several gamemodes and voice servers, or just host a single DarkRP server, this donation system is designed to work for your needs.
+
+This system currently contains the following features.
 
 * Unlimited number of servers to connect to.
 * An unlimited number of packages to choose from.
@@ -13,6 +17,14 @@ HDG Auto Donation System is an innovation in Garry's Mod auto-donation systems. 
 * Database donation logging
 * Donation Verification
 * Physical verbose logging.
+
+Future planned features:
+
+* Compatibility with different payment processors. (Other than PayPal).
+* Multiple TeamSpeak servers
+* Multiple Voice server types.
+* Compatibility with more package types (DarkRP money, Server Ranks, etc etc)
+* And lots more!
 
 This donation system is an official product of Higher Dimensions Gaming.
 
@@ -39,3 +51,11 @@ A ticked box means its fixed.
 | Micah Carrick | Authoring paypal.class.php |
 | Rob McFadzean | Authoring steamapiv2.class.php |
 | ScP | Author of the TeamSpeak 3 library |
+| ichimonai.com | Authoring steamlogin.php |
+
+### Licensing
+
+This software is partially protected by the GNU General Public License V3.0.
+For more information regarding what you can and cannot do with this software, please consult the LICENSE.TXT included with this repository.
+
+Note that some files have their own licensing, including the MIT license, and as such are protected by their own licensing.

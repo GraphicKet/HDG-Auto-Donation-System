@@ -1,4 +1,5 @@
 <?php
+// This file is not protected by the GNU GPL License, as it was not authored by Nathan Davies-Lee.
 
     define('PACKET_SIZE', '1400');
     define('SERVERQUERY_INFO', "\xFF\xFF\xFF\xFFTSource Engine Query");
