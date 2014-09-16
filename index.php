@@ -77,8 +77,8 @@ $ip = $_SERVER['REMOTE_ADDR'];
 </head>
 <body>
 <?php $pagecontent = '<div style="margin-top:3px;text-align: center;">
-<p><div class="donationform"><b =""><b =""> </b></b>
-			<form name="_xclick" action="'.$paypalurl.'" method="post"><b =""><b =""> 
+<p><div class="donationform">
+			<form name="_xclick" action="'.$paypalurl.'" method="post"> 
 				
 				<input name="cmd" value="_xclick" type="hidden" /> 
 				<input name="business" value="'.$paypalemail.'" type="hidden" /><!--Put in your paypal e-mail in the value -->
