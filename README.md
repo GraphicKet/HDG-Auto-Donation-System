@@ -52,6 +52,7 @@ A ticked box means its fixed.
 | Rob McFadzean | Authoring steamapiv2.class.php |
 | ScP | Author of the TeamSpeak 3 library |
 | ichimonai.com | Authoring steamlogin.php |
+| Cyberuben | Numerous suggestions and debugging |
 
 ### Licensing
 
