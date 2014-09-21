@@ -36,11 +36,14 @@ You will be given credit in this file.
 
 ### Known Issues
 A ticked box means its fixed.
-- [ ] Index page does not do anything when you click the donate button.
+- [x] Index page has been fixed.
 - [ ] IPN is untested, not sure if functioning at all.
 - [ ] Forum Query system untested, not sure if functioning at all.
   - [x] Test the actual MySQL queries. (They work. ~Scorn)
 - [ ] Email template system untested, not sure if functioning at all.
+- [ ] Install script isn't finished
+- [ ] Admin CP isn't finished
+- [ ] Settings and Configs have not been moved to a MySQL based system
 
 ### Credits
 
