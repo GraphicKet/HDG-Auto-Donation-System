@@ -44,13 +44,13 @@ class SteamAPI {
 			$this->customURL = strtolower($id);
 		}
         
-            if( !file_exists('./profiles/steamprofile.'.$id.'.cache.xml') || (time() - filemtime('./profiles/steamprofile.'.$id.'.cache.xml')) > 160 )
+            if( !file_exists('./core/profiles/steamprofile.'.$id.'.cache.xml') || (time() - filemtime('./core/profiles/steamprofile.'.$id.'.cache.xml')) > 160 )
         {
             $url = $this->baseUrl() . "/?xml=1";
             if( ini_get('allow_url_fopen') == '1' )
             {
                 $feed = file_get_contents($url);
-                file_put_contents('./profiles/steamprofile.'.$id.'.cache.xml',$feed);
+                file_put_contents('./core/profiles/steamprofile.'.$id.'.cache.xml',$feed);
                 
             }
             else
@@ -63,7 +63,7 @@ class SteamAPI {
                     curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
                     $feed = curl_exec($ch);
                     curl_close($ch);
-                    file_put_contents('./profiles/steamprofile.'.$id.'.cache.xml',$feed);  
+                    file_put_contents('./core/profiles/steamprofile.'.$id.'.cache.xml',$feed);  
                 }
                 else
                 {
@@ -76,14 +76,14 @@ class SteamAPI {
         if( function_exists('simplexml_load_file') || $id )
         {
             libxml_use_internal_errors(true);
-            $xml = simplexml_load_file('./profiles/steamprofile.'.$id.'.cache.xml');
+            $xml = simplexml_load_file('./core/profiles/steamprofile.'.$id.'.cache.xml');
             if( !$xml )
             {
                 foreach( libxml_get_errors() as $error )
                 {
-                    @file_put_contents('./profiles/steamprofile.log.txt',date('[d/m/Y H:i.s]').' '.$error."\n",FILE_APPEND);
+                    @file_put_contents('./core/profiles/steamprofile.log.txt',date('[d/m/Y H:i.s]').' '.$error."\n",FILE_APPEND);
                 }
-                @file_put_contents('./profiles/steamprofile.log.txt',"\n\n",FILE_APPEND);
+                @file_put_contents('./core/profiles/steamprofile.log.txt',"\n\n",FILE_APPEND);
                 return false;
             }
 		
