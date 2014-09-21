@@ -13,7 +13,7 @@ $myEmail = $_POST['email'];
 
 $newpass = md5($myPassword); //This will make your password encrypted into md5, a high security hash
 
-$sql = mysql_query( "INSERT INTO users (`id`, `username`, `password`, `email`) VALUES ('', '$myUsername','$newpass', '$myEmail')" )
+$sql = mysql_query( "INSERT INTO admin (`id`, `username`, `password`, `email`) VALUES ('', '$myUsername','$newpass', '$myEmail')" )
         or die( mysql_error() );
 
 die( "You have registered for an account.<br><br>Go to <a href=\"login.html\">Login</a>" );

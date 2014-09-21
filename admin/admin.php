@@ -17,13 +17,24 @@ if(empty($_SESSION['user_id'])){
 if (isset($_GET["x"])) {
     $x = explode(":",$_GET["x"]);
 
-    switch($x[0])
+    /*switch($x[0])
     {
         case 'next':
-            next();
+            second();
         break;
-
- }
+ }*/
+	if($x[0] == "next")
+	{
+	second();
+	}
+	elseif($x[0] == "home")
+	{
+	start();
+	}
+	else
+	{
+	start();
+	}
 }
 else { start(); }
 
@@ -33,6 +44,7 @@ function start()
   echo '<div id="fulladmin">';
   echo '<div id="adminleft">';
   //Add a function and change this line to it.
+  echo '<br><center><a href="admin.php?x=home"><font color=orange>Home</font></a></center><br>';
   echo '<br><center><a href="admin.php?x=next"><font color=white>Test Page</font></a></center><br></div>';
 
 echo '<div id="adminright"><center><h1>Administrator Control Panel</h1><br><br>';
@@ -42,12 +54,13 @@ echo '</center></div></div>';
  
  
 //A Blank second page
-function next()
+function second()
 {
   echo '<div id="fulladmin">';
   echo '<div id="adminleft">';
   //Add a function and change this line to it.
-  echo '<br><center><a href="admin.php?x=next"><font color=white>Test Page</font></a></center><br></div>';
+  echo '<br><center><a href="admin.php?x=home"><font color=white>Home</font></a></center><br>';
+  echo '<br><center><a href="admin.php?x=next"><font color=orange>Test Page</font></a></center><br></div>';
 
 echo '<div id="adminright"><center><h1>Administrator Control Panel</h1><br><br>';
 echo 'This is the second page.<br><br>';
