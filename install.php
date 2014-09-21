@@ -25,7 +25,11 @@ if($installed)
 {
 	die("Error: It appears that this system is already installed.<br><br>If you believe this to be incorrect, delete the settings file found in /core/.");
 }
-if(isset($_GET["progress"]) && $_GET["progress"] == 1){
+if(!isset($_GET["progress"])
+{
+	require ROOT."/install/step1.php";
+}
+if(isset($_GET["progress"]) && $_GET["progress"] == 1)
 {
 	$createquery = "CREATE TABLE packages
 		(
