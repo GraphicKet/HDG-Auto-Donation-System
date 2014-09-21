@@ -12,9 +12,9 @@ define('IS_INTERNAL', 1);
 define('VERSION', 1.1);
 // Step 1: Have we already installed it?
 $installed = false;
-if(file_exists(ROOT."/inc/settings.php"))
+if(file_exists(ROOT."/core/settings.php"))
 {
-	require ROOT."/inc/settings.php";
+	require ROOT."/core/settings.php";
 	if(is_array($config))
 	{
 		$installed = true;
@@ -23,7 +23,7 @@ if(file_exists(ROOT."/inc/settings.php"))
 
 if($installed)
 {
-	die("Error: It appears that this system is already installed.<br><br>If you believe this to be incorrect, delete the settings file found in /inc/.");
+	die("Error: It appears that this system is already installed.<br><br>If you believe this to be incorrect, delete the settings file found in /core/.");
 }
 if(isset($_GET["progress"]) && $_GET["progress"] == 1){
 {

@@ -24,7 +24,7 @@ define('IS_INTERNAL',true);
 require "paypal.class.php";
 require "rcon_code.php";
 require "config.php";
-require "libraries/TeamSpeak3/TeamSpeak3.php";
+require "./libraries/TeamSpeak3/TeamSpeak3.php";
 require "forumquery.php";
 	
 $p = new paypal_class;

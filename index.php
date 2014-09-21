@@ -21,9 +21,9 @@
 */
 //////////////////////////////////////////////////////////////////////////////////////////////////
 define('IS_INTERNAL',true);
-require("config.php");
-require("steamapiv2.class.php");
-require("steamlogin.php");
+require("core/config.php");
+require("core/steamapiv2.class.php");
+require("core/steamlogin.php");
 
 function GetSteamNorm($Steam64){
 	$authserver = bcsub( $Steam64, '76561197960265728' ) & 1;
@@ -141,7 +141,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $pageContent .= '
 				<font color="#ff0000">*</font><input type="checkbox" name="agree"> I have read and agree to the <a href="'.$config["paypal"]["Terms and Conditions"].'">Terms and Conditions</a>.<br>
 				<font color="#ff0000">*</font><input type="checkbox" name="agree2"> I have double-checked to ensure that the above information is correct, and agree that I will not be eligible for a refund if the above information is incorrect.</br>
-				<input type="image" src="paypal-donate.gif" border="0" name="submit" id="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				<input type="image" src="./images/paypal-donate.gif" border="0" name="submit" id="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				
 			</form>
 			</div>

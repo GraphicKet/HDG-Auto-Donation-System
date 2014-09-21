@@ -1,0 +1,15 @@
+# You may be wondering why this file is here. The purpose this file serves is to prevent people from accessing your logs. This file makes them only accessible from the localhost,
+# and from FTP. What does this mean? People who know the donation system cannot exploit the system
+<Limit GET POST>
+  order deny,allow
+  deny from all
+  allow from 127.0.0.1
+  allow from localhost
+  # allow from ::0  #Experimental, should allow IPv6 to access it.
+</Limit>
+ErrorDocument 403 ../index.php #Sneaky people go back to index.
+# secure htaccess file
+<Files .htaccess>
+	order allow,deny
+	deny from all
+</Files>

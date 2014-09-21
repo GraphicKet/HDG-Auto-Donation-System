@@ -111,7 +111,7 @@ $config["emails"]["Contact Us"] = "contactus@yourdomain.com";
 $config["emails"]["Community Name"] = "Your Community";
 $config["emails"]["Log Email"][0] = "logs@yourdomain.com";
 $config["emails"]["Log Email"][1] = "logs@anotherdomain.com";
-$config["emails"]["Email Template"] = "./Emails/default.php";
+//$config["emails"]["Email Templates"] = "templates/";
 $config["emails"]["Website"] = "http://yourdomain.com";
 $config["emails"]["Logo"] = "http://placehold.it/200x50/";
 
@@ -152,8 +152,8 @@ $config["teamspeak"]["Query Port"] = "10011"; // Query port of the server.
 // Logging Config               //
 //////////////////////////////////
 $config["logs"]["Is Used"] = true; // Text logs...
-$config["logs"]["Generic Logs File"] = "./logs/logs"; // We handle the extension =D
-$config["logs"]["IPN Logs File"] = "./logs/ipn_logs";
+$config["logs"]["Generic Logs File"] = "../logs/logs"; // We handle the extension =D
+$config["logs"]["IPN Logs File"] = "../logs/ipn_logs";
 $config["logs"]["Date Format"] = "d-m-Y"; // Refer to http://php.net/manual/en/function.date.php for a valid entry.
 $config["logs"]["Time Format"] = "g:i.s A"; // Refer to http://php.net/manual/en/function.date.php for a valid entry.
 
