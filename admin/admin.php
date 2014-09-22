@@ -17,29 +17,23 @@ if(empty($_SESSION['user_id'])){
 if (isset($_GET["x"])) {
     $x = explode(":",$_GET["x"]);
 
-    /*switch($x[0])
-    {
-        case 'next':
-            second();
-        break;
- }*/
-	if($x[0] == "next")
+	if($x[0] == "packages")
 	{
-	second();
+		packages();
 	}
 	elseif($x[0] == "home")
 	{
-	start();
+		home();
 	}
 	else
 	{
-	start();
+		home();
 	}
 }
-else { start(); }
+else { home(); }
 
 //Main Admin Homepage
-function start()
+function home()
 {
   echo '<div id="fulladmin">';
   echo '<div id="adminleft">';
@@ -54,13 +48,14 @@ echo '</center></div></div>';
  
  
 //A Blank second page
-function second()
+function packages()
 {
-  echo '<div id="fulladmin">';
-  echo '<div id="adminleft">';
-  //Add a function and change this line to it.
-  echo '<br><center><a href="admin.php?x=home"><font color=white>Home</font></a></center><br>';
-  echo '<br><center><a href="admin.php?x=next"><font color=orange>Test Page</font></a></center><br></div>';
+	echo '<div id="fulladmin">';
+	echo '<div id="adminleft">';
+	//Add a function and change this line to it.
+	echo '<br><center><a href="admin.php?x=home"><font color=white>Home</font></a></center><br>';
+	echo '<br><center><a href="admin.php?x=next"><font color=orange>Test Page</font></a></center><br></div>';
+	// Yay I get to set up sql shit here.
 
 echo '<div id="adminright"><center><h1>Administrator Control Panel</h1><br><br>';
 echo 'This is the second page.<br><br>';
